@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>react</title>
+  <!-- bootstrap link  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- bootstrap link  -->
+
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="display" class="text-center">
+      <p>0</p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-primary" onclick="refresh()">
+      push
+    </button>
+  </div>
+
+
+<!-- react CDN link -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!-- react CDN link -->
+
+<script>
+  let dom = document.getElementById("display");
+
+  let refresh =()=>{
+    let num = Math.random()*6;
+    let el = React.createElement('p',{}, num);
+
+  }
+
+
+
+  ReactDOM.render(el, dom);
+</script>
+
+</body>
+</html>
