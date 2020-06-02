@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   let items =[
-    {'name':'strobery','price':100},
+    {'name':'sstrobery','price':100},
     {'name':'apple','price':150},
     {'name':'banan','price':230},
     
@@ -20,7 +20,9 @@ function App() {
           <td>{value.price}yen</td>
           </tr>
           ))}
+
         </tbody>
+
       </table>
     </div>
   )
