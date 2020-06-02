@@ -3,23 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let title = "react and jsx"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          書き換え　ました
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 id="h1" className="main-title">{title}</h1>
+      <p style={{color:"red"}}>HTML kakemasu</p>
     </div>
   );
 }
